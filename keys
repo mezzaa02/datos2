@@ -1,0 +1,16 @@
+git config --global user.name "mezzaa02"
+git config --global user.email "delgadomeza02@gmail.com"
+
+git clone https://github.com/mezzaa02/datos2
+cd datos2
+
+
+git add .
+
+git commit -m "Descripción de los cambios"
+
+git push origin main
+
+gunicorn -b 0.0.0.0:8765 server:app 
+
+.
